@@ -15,6 +15,8 @@ export default function TabLayout() {
         headerShown: false,
         tabBarButton: HapticTab,
       }}>
+
+      {/* home page */}
       <Tabs.Screen
         name="index"
         options={{
@@ -22,6 +24,16 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
+
+      {/* payments page */}
+      <Tabs.Screen
+        name="payments/index"
+        options={{
+          title: 'Pagos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="creditcard.fill" color={color} />,
+        }}
+      />
+
     </Tabs>
   );
 }
